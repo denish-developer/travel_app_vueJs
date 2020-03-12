@@ -9,11 +9,11 @@
   			<h2>{{destination.name}}</h2>
   		</router-link>
   		<figure>
-  			<route-link :to="{name: 'DestinationDetails', params:{slug:destination.slug}}">
+  			<router-link :to="{name: 'DestinationDetails', params:{slug:destination.slug}}">
   				<img :src="require(`@/assets/${destination.image}`)"
                      :alt="destination.name"
   				>
-  			</route-link>
+  			</router-link>
   		</figure>
   		</div>
   	</div>
