@@ -1,9 +1,13 @@
 import Vue from "vue";
 import Router from "vue-router";
+import Vuelidate from "vuelidate";
 import Home from "./views/Home.vue";
+import Form from "./views/Form.vue"
 
 
 Vue.use(Router);
+// global
+ Vue.use(Vuelidate);
 
 export default new Router({
   mode:"history",
@@ -26,11 +30,18 @@ export default new Router({
       }
      }
   },
+  //end scroll
   routes: [
     {
       path: "/",
       name: "home",
       component: Home,
+      props:true
+    },
+    {
+      path:"/form",
+      name:"form",
+      component: Form,
       props:true
     },
     // {
