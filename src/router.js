@@ -2,7 +2,8 @@ import Vue from "vue";
 import Router from "vue-router";
 import Vuelidate from "vuelidate";
 import Home from "./views/Home.vue";
-import Form from "./views/Form.vue"
+import Form from "./views/Form.vue";
+import Todo from "./views/Todo.vue";
 
 
 Vue.use(Router);
@@ -44,6 +45,13 @@ export default new Router({
       component: Form,
       props:true
     },
+    {
+      path:"/todo",
+      name:"todo",
+      component: Todo,
+      props:true
+    },
+
     // {
     //   path: "/about",
     //   name: "about",
